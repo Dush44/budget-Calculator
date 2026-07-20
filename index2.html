@@ -1,0 +1,1374 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AG SKYBRIDGE | Luxury Travel & Tourism</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ["Poppins", "sans-serif"],
+          display: ["Montserrat", "sans-serif"],
+          serifItalic: ["Playfair Display", "serif"],
+        },
+        colors: {
+          brand: {
+            primary: "#1e315b",
+            secondary: "#163a6b",
+            gold: "#d4af37",
+            light: "#f8f9fb",
+            dark: "#333333",
+          }
+        },
+        aspectRatio: {
+          '4/3': '4 / 3',
+        }
+      }
+    }
+  }
+</script>
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  .italic-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+  }
+
+  .scroll-indicator-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(to right, #D4AF37, #F3E5AB);
+    z-index: 100;
+    width: 0%;
+    transition: width 0.1s ease-out;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
+
+
+<!-- <body class="font-sans text-brand-dark bg-brand-light overflow-x-hidden antialiased"> -->
+
+<!-- Scroll Progress -->
+<div id="scroll-progress" class="scroll-indicator-bar"></div>
+
+
+<!-- Hero Section -->
+<section id="home" class="relative min-h-[110vh] bg-white pt-0 pb-32 flex items-center overflow-hidden">
+
+  <!-- Background Accents -->
+  <div
+    class="absolute top-0 right-0 w-[700px] h-[700px] bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/3">
+  </div>
+  <div
+    class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-gold/10 blur-[100px] rounded-full pointer-events-none translate-y-1/3 -translate-x-1/4">
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-10 text-left">
+        <div
+          class="flex flex-col items-center sm:items-start sm:flex-row sm:items-center space-y-5 sm:space-y-0 sm:space-x-6">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/logo-ag-scaled.png"
+            alt="AG SKYBRIDGE Logo" class="h-20 sm:h-20 w-auto object-contain" />
+          <div
+            class="inline-flex items-center space-x-2 bg-brand-primary/5 border border-brand-primary/10 px-4 py-2 rounded-none text-brand-primary text-sm font-semibold tracking-wider uppercase">
+            <span class="w-2 h-2 rounded-none bg-brand-gold animate-ping"></span>
+            <span>Premium Sri Lanka & International Tour Operator</span>
+          </div>
+        </div>
+        <h1
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-brand-primary leading-tight">
+          Explore the World <br />
+          <span class="italic-serif text-brand-gold">with Confidence</span>
+        </h1>
+        <p class="text-base sm:text-lg lg:text-xl text-gray-600 font-light leading-relaxed max-w-2xl">
+          Your trusted travel partner for unforgettable international holidays, air ticketing, and luxury local tours.
+        </p>
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-6">
+          <a href="#destinations"
+            class="bg-brand-gold hover:bg-[#c4a132] text-brand-primary font-display font-bold text-sm tracking-wider uppercase px-10 py-5 rounded-none shadow-[0_4px_14px_0_rgba(212,175,55,0.39)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.23)] hover:-translate-y-0.5 transition-all text-center">Explore
+            Packages</a>
+          <a href="#contact"
+            class="bg-brand-primary hover:bg-brand-secondary text-white font-display font-bold text-sm tracking-wider uppercase px-10 py-5 rounded-none border border-transparent shadow-md transition-all text-center">Contact
+            Consultant</a>
+        </div>
+
+        <!-- Trust Stats -->
+        <div
+          class="!mt-1 pt-2 border-t border-gray-100 flex items-center space-x-4 text-base text-gray-500 font-medium">
+          <div class="flex items-center space-x-2.5">
+            <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-current"></i>
+            <span>1K+ Happy Travelers</span>
+          </div>
+          <div class="flex items-center space-x-2.5">
+            <i data-lucide="shield-check" class="h-5 w-5 text-brand-primary"></i>
+            <span>5+ Years Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Brand Collage -->
+      <div
+        class="lg:col-span-5 relative w-full aspect-square max-w-[700px] lg:max-w-[850px] mx-auto hidden lg:flex items-center justify-center">
+        <!-- Central Traveler Portrait Framed Leaf Card -->
+        <a href="#destinations"
+          class="relative z-20 w-full h-full overflow-visible rounded-none group block animate-float">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary/40 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/Banner-Girl.png" alt="Premium Traveler"
+            class="w-full h-full object-contain object-center transition-transform duration-1000 group-hover:scale-105 drop-shadow-2xl" />
+          <!-- Floating Badge -->
+          <!-- <div class="absolute bottom-2 left-6 right-6 z-20 bg-white/90 backdrop-blur-md px-5 py-3 rounded-none shadow-xl flex items-center justify-between">
+                <div>
+                  <span class="text-[9px] font-bold text-brand-gold uppercase tracking-wider block">Ready to Explore?</span>
+                  <span class="text-xs font-bold text-brand-primary">Luxury Holiday Packages</span>
+                </div>
+                <div class="bg-brand-primary text-white p-2 rounded-none group-hover:bg-brand-gold transition-colors duration-300">
+                  <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </div>
+              </div> -->
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+      <!-- Left overlap images -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative z-10 w-4/5 aspect-4/3 rounded-none overflow-hidden shadow-2xl border border-gray-100">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/travel.avif" alt="Travel Consultation"
+            class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-brand-primary/10"></div>
+        </div>
+        <!-- Offset secondary image -->
+        <div
+          class="absolute -right-4 -bottom-10 z-20 w-3/5 aspect-square rounded-none overflow-hidden shadow-2xl border-4 border-white">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/travel2.jpg" alt="Consulting Office"
+            class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-brand-gold/10"></div>
+        </div>
+        <!-- Credibility Badge -->
+        <div
+          class="absolute -left-6 -bottom-6 z-30 bg-brand-primary text-white p-5 rounded-none shadow-xl max-w-[160px]">
+          <i data-lucide="award" class="h-8 w-8 text-brand-gold mb-2"></i>
+          <div class="font-display font-extrabold text-lg leading-none">PREMIUM</div>
+          <div class="text-[10px] text-white/70 uppercase tracking-widest mt-1">Travel Agency</div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2 text-brand-gold font-medium text-xs tracking-widest uppercase">
+            <i data-lucide="compass" class="h-4 w-4"></i>
+            <span>Our Vision & Standard</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-primary">
+            About <span class="italic-serif text-brand-gold">AG SKYBRIDGE</span>
+          </h2>
+          <div class="h-1 w-20 bg-brand-gold rounded-none"></div>
+        </div>
+
+        <div class="space-y-4 text-gray-600 font-light leading-relaxed text-sm sm:text-base">
+          <p>
+            <span class="font-semibold text-brand-primary">AG SKYBRIDGE</span> is Sri Lanka's premier boutique travel
+            and tourism provider, dedicated to establishing new standards of luxury and absolute client convenience.
+          </p>
+          <p>
+            Born out of a long-standing commitment to safety, meticulous care, and transparency, we handle every
+            detail of your journeys end-to-end so you can focus entirely on the moments that matter.
+          </p>
+          <p>
+            Whether you're organizing a tailored family vacation, seeking best-fare international ticketing,
+            coordinating corporate flight routes, or exploring the scenic secrets of Sri Lanka, we guarantee a
+            seamless, safe, and elite travel experience.
+          </p>
+        </div>
+
+        <!-- Foundational pillars -->
+        <div class="pt-6">
+          <h4 class="font-display font-bold text-brand-primary mb-6 text-sm uppercase tracking-wider">Our Foundational
+            Pillars</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-brand-light p-4 rounded-none border border-gray-100 flex items-start space-x-3">
+              <div class="bg-brand-primary/5 text-brand-gold p-2 rounded-none shrink-0 mt-0.5">
+                <i data-lucide="compass" class="h-4 w-4"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-brand-primary">Curated Luxury</div>
+                <div class="text-[11px] text-gray-500 font-bold mt-1">Custom itineraries designed by holiday
+                  specialists.</div>
+              </div>
+            </div>
+            <div class="bg-brand-light p-4 rounded-none border border-gray-100 flex items-start space-x-3">
+              <div class="bg-brand-primary/5 text-brand-gold p-2 rounded-none shrink-0 mt-0.5">
+                <i data-lucide="plane" class="h-4 w-4"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-brand-primary">Elite Air Access</div>
+                <div class="text-[11px] text-gray-500 font-bold mt-1">Guaranteed preferred seats & optimized flight
+                  routes.</div>
+              </div>
+            </div>
+            <div class="bg-brand-light p-4 rounded-none border border-gray-100 flex items-start space-x-3">
+              <div class="bg-brand-primary/5 text-brand-gold p-2 rounded-none shrink-0 mt-0.5">
+                <i data-lucide="shield" class="h-4 w-4"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-brand-primary">Seamless Visas</div>
+                <div class="text-[11px] text-gray-500 font-bold mt-1">Expert advisory with meticulous clearance
+                  tracking.</div>
+              </div>
+            </div>
+            <div class="bg-brand-light p-4 rounded-none border border-gray-100 flex items-start space-x-3">
+              <div class="bg-brand-primary/5 text-brand-gold p-2 rounded-none shrink-0 mt-0.5">
+                <i data-lucide="heart" class="h-4 w-4"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-brand-primary">24/7 Concierge</div>
+                <div class="text-[11px] text-gray-500 font-bold mt-1">Continuous real-time assistance during your
+                  entire tour.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-24 bg-brand-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <div class="text-brand-gold font-medium text-xs tracking-widest uppercase">Our Professional Expertise</div>
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-primary">
+        Premium <span class="italic-serif text-brand-gold">Travel Services</span>
+      </h2>
+      <p class="text-gray-500 font-light text-sm sm:text-base">
+        From luxury long-haul vacations to seamless corporate flight routes and domestic chauffeur tours, we manage
+        your journeys end-to-end.
+      </p>
+      <div class="h-1 w-20 bg-brand-gold mx-auto rounded-none"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+      <!-- Services Card 1 -->
+      <div
+        class="bg-white rounded-none shadow-xl p-8 border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+        <div>
+          <div
+            class="bg-brand-primary/10 text-brand-primary p-4 rounded-none w-14 h-14 flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+            <i data-lucide="globe" class="h-7 w-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-brand-primary mb-2">Outbound Holiday Packages</h3>
+          <p class="text-xs text-brand-gold font-medium mb-4 uppercase tracking-wider">Exotic Destinations</p>
+          <p class="text-sm text-gray-500 font-light mb-6 leading-relaxed">
+            Tailored journeys to the world's most desired holiday destinations, fully guided with curated hotel stays
+            and daily tours.
+          </p>
+          <div class="mb-6">
+            <span class="text-xs font-semibold text-brand-secondary block mb-2 uppercase tracking-wide">Featured
+              Packages</span>
+            <div class="flex flex-wrap gap-2 text-xs text-gray-600 font-medium">
+              <span class="bg-brand-light px-2.5 py-1 rounded-none">Thailand</span>
+              <span class="bg-brand-light px-2.5 py-1 rounded-none">Malaysia</span>
+              <span class="bg-brand-light px-2.5 py-1 rounded-none">Maldives</span>
+              <span class="bg-brand-light px-2.5 py-1 rounded-none">UAE (Dubai)</span>
+              <span class="bg-brand-light px-2.5 py-1 rounded-none">China</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              class="inline-flex items-center text-[10px] font-semibold text-brand-secondary bg-brand-gold/10 px-2 py-1 rounded-none"><i
+                data-lucide="star" class="h-2.5 w-2.5 text-brand-gold mr-1"></i>Family Choice</span>
+            <span
+              class="inline-flex items-center text-[10px] font-semibold text-brand-secondary bg-brand-gold/10 px-2 py-1 rounded-none"><i
+                data-lucide="star" class="h-2.5 w-2.5 text-brand-gold mr-1"></i>Honeymoons</span>
+            <span
+              class="inline-flex items-center text-[10px] font-semibold text-brand-secondary bg-brand-gold/10 px-2 py-1 rounded-none"><i
+                data-lucide="star" class="h-2.5 w-2.5 text-brand-gold mr-1"></i>Groups</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Card 2 -->
+      <div
+        class="bg-brand-primary text-white rounded-none shadow-xl p-8 border border-white/5 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+        <div>
+          <div
+            class="bg-brand-gold text-brand-primary p-4 rounded-none w-14 h-14 flex items-center justify-center mb-6 group-hover:bg-white transition-colors duration-300">
+            <i data-lucide="plane-takeoff" class="h-7 w-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-2">Air Ticketing & Visa</h3>
+          <p class="text-xs text-brand-gold font-medium mb-4 uppercase tracking-wider">Worry-Free Boarding</p>
+          <p class="text-sm text-white/70 font-light mb-6 leading-relaxed">
+            Global airline connections ensuring we search and reserve the absolute best flight itineraries and fare
+            combinations.
+          </p>
+          <div class="space-y-3 mb-6 text-sm text-white/85 font-light">
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-gold"></i><span>International Flights</span></div>
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-gold"></i><span>Visa Assistance Guidance</span></div>
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-gold"></i><span>Travel Insurance</span></div>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-6">
+          <span class="text-xs text-brand-gold font-semibold flex items-center"><i data-lucide="shield-alert"
+              class="h-4 w-4 mr-2"></i>Licensed & Confident Services</span>
+        </div>
+      </div>
+
+      <!-- Services Card 3 -->
+      <div
+        class="bg-white rounded-none shadow-xl p-8 border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+        <div>
+          <div
+            class="bg-brand-primary/10 text-brand-primary p-4 rounded-none w-14 h-14 flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+            <i data-lucide="car" class="h-7 w-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-brand-primary mb-2">Luxury Sri Lanka Tours</h3>
+          <p class="text-xs text-brand-gold font-medium mb-4 uppercase tracking-wider">Exquisite Local Escapes</p>
+          <p class="text-sm text-gray-500 font-light mb-6 leading-relaxed">
+            Discover the wonders of Sri Lanka on a customized day excursion or private tour guided by licensed,
+            bilingual drivers in premium vehicles.
+          </p>
+          <div class="space-y-3 mb-6 text-sm text-gray-600 font-light">
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-secondary"></i><span>Luxury Private Chauffeurs</span></div>
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-secondary"></i><span>High-End Comfortable Fleet</span></div>
+            <div class="flex items-center space-x-2.5"><i data-lucide="check-circle"
+                class="h-4.5 w-4.5 text-brand-secondary"></i><span>One Day Scenic Excursions</span></div>
+          </div>
+        </div>
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex items-center justify-between text-xs text-brand-primary font-bold">
+            <span>Vehicles Available:</span>
+            <span class="text-brand-gold bg-brand-primary/5 px-2.5 py-1 rounded-none">Premium SUVs & Vans</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Group Companies Synergy -->
+<section id="group" class="py-24 bg-white relative overflow-hidden">
+  <div
+    class="absolute inset-0 bg-[radial-gradient(#1e315b_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.02]">
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <div
+        class="text-brand-gold font-medium text-xs tracking-widest uppercase flex items-center justify-center space-x-1.5">
+        <i data-lucide="shield-check" class="h-4 w-4"></i>
+        <span>Corporate Synergy & Trust</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-primary">
+        Proud Member of the <span class="italic-serif text-brand-gold">Academic Gateways</span> Group
+      </h2>
+      <p class="text-gray-500 font-light text-sm sm:text-base">
+        Operating as part of an established institutional umbrella serving Sri Lanka for over two decades. Your travel
+        guarantees are fully backed by corporate security.
+      </p>
+      <div class="h-1 w-20 bg-brand-gold mx-auto rounded-none"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Company 1 -->
+      <div
+        class="bg-brand-light p-6 rounded-none border border-gray-100 hover:border-brand-gold/30 shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="mb-4">
+            <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/Academic-Gateways.png"
+              alt="Academic Gateways Logo" class="h-12 w-auto object-contain" />
+          </div>
+          <h3 class="font-display font-extrabold text-base text-brand-primary">Academic Gateways</h3>
+          <div class="text-xs font-semibold mb-2 text-brand-secondary">Parent Holding & Corporate Infrastructure</div>
+          <p class="text-xs font-light leading-relaxed text-gray-500">Established study abroad consultants and group
+            headquarters providing corporate foundation and security guarantees.</p>
+        </div>
+      </div>
+
+      <!-- Company 2 -->
+      <div
+        class="bg-brand-light p-6 rounded-none border border-gray-100 hover:border-brand-gold/30 shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="mb-4">
+            <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/nexis.png"
+              alt="Nexis College International Logo" class="h-12 w-auto object-contain" />
+          </div>
+          <h3 class="font-display font-extrabold text-base text-brand-primary">Nexis College International</h3>
+          <div class="text-xs font-semibold mb-2 text-brand-secondary">Primary & Secondary Academic Institution</div>
+          <p class="text-xs font-light leading-relaxed text-gray-500">Nurturing educational standards, community
+            empowerment, and building global opportunities for Sri Lankan students.</p>
+        </div>
+      </div>
+
+      <!-- Company 3 -->
+      <div
+        class="bg-brand-light p-6 rounded-none border border-gray-100 hover:border-brand-gold/30 shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="mb-4">
+            <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/logo-ag-scaled.png"
+              alt="AG SKYBRIDGE Logo" class="h-12 w-auto object-contain" />
+          </div>
+          <h3 class="font-display font-extrabold text-base text-brand-primary">AG SKYBRIDGE</h3>
+          <div class="text-xs font-semibold mb-2 text-brand-secondary">Premium Travel, Flight Routes & Tour Advisory
+          </div>
+          <p class="text-xs font-light leading-relaxed text-gray-500">The dedicated hospitality, ticketing, and
+            vacation booking service of the group ensuring safe and premium travel standards.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Choose Us Advantage Grid -->
+<section id="why-choose-us" class="py-28 bg-white relative overflow-hidden border-t border-b border-gray-100">
+  <!-- Subtle linear background mesh -->
+  <div
+    class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:32px_32px] opacity-60">
+  </div>
+  <div
+    class="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-primary/5 blur-[120px] pointer-events-none rounded-full">
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-start">
+
+      <!-- Left Column: Sticky Editorial Info -->
+      <div class="lg:col-span-4 lg:sticky lg:top-28 space-y-8">
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center space-x-2 bg-brand-primary/5 border border-brand-primary/10 px-3 py-1 rounded-none text-brand-primary font-bold text-[10px] tracking-widest uppercase">
+            <i data-lucide="sparkles" class="h-3 w-3 text-brand-gold"></i>
+            <span>The AG SKYBRIDGE Advantage</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-brand-primary leading-tight">
+            Setting the <span class="italic-serif text-brand-gold font-normal">Standard</span> for Premium Travel
+          </h2>
+          <div class="h-[2px] w-12 bg-brand-gold"></div>
+        </div>
+
+        <p class="text-gray-500 font-bold text-sm sm:text-base leading-relaxed">
+          Backed by the Academic Gateways group's prestigious legacy, we combine 5+ years of trust with modern,
+          premium travel networks.
+        </p>
+
+        <!-- Asymmetric Stats Grid -->
+        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-gray-100">
+          <div class="space-y-1">
+            <div class="text-4xl font-display font-black text-brand-primary tracking-tight">5+</div>
+            <div class="text-[10px] font-bold text-brand-gold uppercase tracking-wider">Years Group Trust</div>
+          </div>
+          <div class="space-y-1">
+            <div class="text-4xl font-display font-black text-brand-primary tracking-tight">1K+</div>
+            <div class="text-[10px] font-bold text-brand-gold uppercase tracking-wider">Happy Travelers</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Minimalist Advantage Grid -->
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
+        <!-- Item 1 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="shield-check" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Institutional Trust</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Protected under the established corporate
+              umbrella of the Academic Gateways Holding.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="compass" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Bespoke Design</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Custom luxury holiday packages crafted entirely
+              according to your budget and preferences.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="badge-percent" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Transparent Pricing</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">No hidden fees or unexpected surcharges.
+              Honest, competitive pricing upfront always.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="user-check" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Dedicated Advisors</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Work directly with designated travel
+              specialists for personalized itinerary consults.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="layers" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              All-in-One Booking</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">From flights, visas, and hotels to chauffeur
+              services, we organize every logistics detail.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="heart-handshake" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Secure Transactions</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Highest standards of electronic and corporate
+              banking safety protocols for your payments.</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="globe" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Global Partnerships</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Direct connections with 5-star hotel groups and
+              leading airlines around the globe.</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="headphones" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              24/7 Priority Helpline</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Direct emergency connection lines to our
+              offices while you are active on your journey.</p>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="map" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Local Guides</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">Access to professional, vetted, bilingual local
+              guides for authentic, safe excursions.</p>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div
+          class="group flex items-start space-x-5 pb-6 border-b border-gray-100 hover:border-brand-gold/30 transition-all duration-300">
+          <div
+            class="flex items-center justify-center w-12 h-12 border border-brand-primary/15 text-brand-gold group-hover:border-brand-gold group-hover:bg-brand-gold group-hover:text-brand-primary transition-all duration-300 shrink-0">
+            <i data-lucide="users" class="h-5 w-5"></i>
+          </div>
+          <div class="space-y-1">
+            <h3
+              class="font-display font-black text-sm text-brand-primary group-hover:text-brand-gold transition-colors duration-300">
+              Thousands Happy</h3>
+            <p class="text-xs text-gray-500 font-bold leading-relaxed">A proud history of over 10,000 satisfied
+              travelers from Sri Lanka and international channels.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Packages Slider (BIG & TALL CARD PHOTOS DESIGN) -->
+<section id="destinations"
+  class="py-28 bg-gradient-to-b from-brand-light via-white to-brand-light relative overflow-hidden">
+  <div class="absolute top-1/4 -left-48 w-96 h-96 bg-brand-gold/5 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 -right-48 w-96 h-96 bg-brand-primary/5 blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+      <div
+        class="inline-flex items-center space-x-2 bg-brand-primary/5 border border-brand-gold/30 px-3 py-1 rounded-none text-brand-gold font-bold text-[10px] tracking-widest uppercase">
+        <i data-lucide="star" class="h-3 w-3 fill-current animate-pulse"></i>
+        <span>Curated International Journeys</span>
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-display font-black text-brand-primary tracking-tight leading-none">
+        Popular <span class="italic-serif text-brand-gold">Holiday Packages</span>
+      </h2>
+      <p class="text-gray-600 font-light text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Select one of our premier pre-designed holiday itineraries. Every package is fully customizable and backed by
+        the institutional trust of the Academic Gateways Group.
+      </p>
+      <div class="h-1 w-24 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto rounded-none">
+      </div>
+    </div>
+
+    <!-- BIG & TALL CARDS GRID -->
+    <div class="flex flex-wrap gap-8 justify-center max-w-7xl mx-auto">
+
+      <!-- Card 1: Thailand -->
+      <div
+        class="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[380px] bg-white rounded-none overflow-hidden shadow-xl border border-gray-100 hover:shadow-[0_30px_60px_rgba(0,23,95,0.12)] hover:border-brand-gold/40 hover:-translate-y-3 transition-all duration-500 flex flex-col justify-between group">
+        <!-- BIG & TALL Photo -->
+        <div class="relative h-[320px] sm:h-[450px] overflow-hidden">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/thailand.png" alt="Thailand Packages"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+          </div>
+
+          <div
+            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-none shadow-md z-20">
+            ★ Best Seller</div>
+          <div
+            class="absolute top-4 right-4 bg-white/95 rounded-none w-9 h-9 flex items-center justify-center text-xl shadow-lg z-20">
+            🇹🇭</div>
+
+
+        </div>
+        <!-- Content -->
+        <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="font-display font-extrabold text-xl sm:text-2xl text-brand-primary group-hover:text-brand-secondary">
+              Thailand Packages</h3>
+            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2.5">
+              <span class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest block mb-1">Key
+                Attractions</span>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Bangkok City
+                  Temple Tour</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Coral Island
+                  Speedboat Tour</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Safari World
+                  Marine Park</span></div>
+            </div>
+          </div>
+          <button onclick="selectPackage('Thailand')"
+            class="w-full bg-brand-primary hover:bg-brand-gold text-white hover:text-brand-primary font-display font-bold text-xs py-3.5 px-4 rounded-none flex items-center justify-center space-x-1.5 shadow-lg transition-all">
+            <span>Enquire Selected Package</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2: Malaysia -->
+      <div
+        class="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[380px] bg-white rounded-none overflow-hidden shadow-xl border border-gray-100 hover:shadow-[0_30px_60px_rgba(0,23,95,0.12)] hover:border-brand-gold/40 hover:-translate-y-3 transition-all duration-500 flex flex-col justify-between group">
+        <!-- BIG & TALL Photo -->
+        <div class="relative h-[320px] sm:h-[450px] overflow-hidden">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/malaysia.png" alt="Malaysia Packages"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+          </div>
+
+          <div
+            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-none shadow-md z-20">
+            ★ Family Choice</div>
+          <div
+            class="absolute top-4 right-4 bg-white/95 rounded-none w-9 h-9 flex items-center justify-center text-xl shadow-lg z-20">
+            🇲🇾</div>
+
+
+        </div>
+        <!-- Content -->
+        <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="font-display font-extrabold text-xl sm:text-2xl text-brand-primary group-hover:text-brand-secondary">
+              Malaysia Packages</h3>
+            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2.5">
+              <span class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest block mb-1">Key
+                Attractions</span>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Petronas Twin
+                  Towers Access</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Genting
+                  Highlands Cable Car</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Batu Caves
+                  Temple Tour</span></div>
+            </div>
+          </div>
+          <button onclick="selectPackage('Malaysia')"
+            class="w-full bg-brand-primary hover:bg-brand-gold text-white hover:text-brand-primary font-display font-bold text-xs py-3.5 px-4 rounded-none flex items-center justify-center space-x-1.5 shadow-lg transition-all">
+            <span>Enquire Selected Package</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3: Dubai -->
+      <div
+        class="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[380px] bg-white rounded-none overflow-hidden shadow-xl border border-gray-100 hover:shadow-[0_30px_60px_rgba(0,23,95,0.12)] hover:border-brand-gold/40 hover:-translate-y-3 transition-all duration-500 flex flex-col justify-between group">
+        <!-- BIG & TALL Photo -->
+        <div class="relative h-[320px] sm:h-[450px] overflow-hidden">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/dubai.png" alt="Dubai Packages"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+          </div>
+
+          <div
+            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-none shadow-md z-20">
+            ★ Elite Luxury</div>
+          <div
+            class="absolute top-4 right-4 bg-white/95 rounded-none w-9 h-9 flex items-center justify-center text-xl shadow-lg z-20">
+            🇦🇪</div>
+
+
+        </div>
+        <!-- Content -->
+        <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="font-display font-extrabold text-xl sm:text-2xl text-brand-primary group-hover:text-brand-secondary">
+              Dubai Packages</h3>
+            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2.5">
+              <span class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest block mb-1">Key
+                Attractions</span>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Desert Safari
+                  with BBQ Buffet</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Burj Khalifa
+                  Observatory Entry</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Miracle
+                  Garden & Marina Cruise</span></div>
+            </div>
+          </div>
+          <button onclick="selectPackage('Dubai')"
+            class="w-full bg-brand-primary hover:bg-brand-gold text-white hover:text-brand-primary font-display font-bold text-xs py-3.5 px-4 rounded-none flex items-center justify-center space-x-1.5 shadow-lg transition-all">
+            <span>Enquire Selected Package</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4: Maldives -->
+      <div
+        class="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[380px] bg-white rounded-none overflow-hidden shadow-xl border border-gray-100 hover:shadow-[0_30px_60px_rgba(0,23,95,0.12)] hover:border-brand-gold/40 hover:-translate-y-3 transition-all duration-500 flex flex-col justify-between group">
+        <!-- BIG & TALL Photo -->
+        <div class="relative h-[320px] sm:h-[450px] overflow-hidden">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/maldives.png" alt="Maldives Packages"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+          </div>
+
+          <div
+            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-none shadow-md z-20">
+            ★ Tropical Paradise</div>
+          <div
+            class="absolute top-4 right-4 bg-white/95 rounded-none w-9 h-9 flex items-center justify-center text-xl shadow-lg z-20">
+            🇲🇻</div>
+
+
+        </div>
+        <!-- Content -->
+        <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="font-display font-extrabold text-xl sm:text-2xl text-brand-primary group-hover:text-brand-secondary">
+              Maldives Packages</h3>
+            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2.5">
+              <span class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest block mb-1">Key
+                Attractions</span>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Luxury Water
+                  Villa Stays</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Speedboat
+                  Transfer Roundtrip</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>All Inclusive
+                  Buffet & Snorkeling</span></div>
+            </div>
+          </div>
+          <button onclick="selectPackage('Maldives')"
+            class="w-full bg-brand-primary hover:bg-brand-gold text-white hover:text-brand-primary font-display font-bold text-xs py-3.5 px-4 rounded-none flex items-center justify-center space-x-1.5 shadow-lg transition-all">
+            <span>Enquire Selected Package</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 5: China -->
+      <div
+        class="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[380px] bg-white rounded-none overflow-hidden shadow-xl border border-gray-100 hover:shadow-[0_30px_60px_rgba(0,23,95,0.12)] hover:border-brand-gold/40 hover:-translate-y-3 transition-all duration-500 flex flex-col justify-between group">
+        <!-- BIG & TALL Photo -->
+        <div class="relative h-[320px] sm:h-[450px] overflow-hidden">
+          <img src="https://www.academicgateways.lk/wp-content/uploads/2026/07/china.png" alt="China Packages"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+          </div>
+
+          <div
+            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-none shadow-md z-20">
+            ★ Heritage Tour</div>
+          <div
+            class="absolute top-4 right-4 bg-white/95 rounded-none w-9 h-9 flex items-center justify-center text-xl shadow-lg z-20">
+            🇨🇳</div>
+
+
+        </div>
+        <!-- Content -->
+        <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="font-display font-extrabold text-xl sm:text-2xl text-brand-primary group-hover:text-brand-secondary">
+              China Packages</h3>
+            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2.5">
+              <span class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest block mb-1">Key
+                Attractions</span>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Great Wall of
+                  China Tour</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Forbidden
+                  City & Summer Palace</span></div>
+              <div class="flex items-center space-x-2 text-xs sm:text-sm text-gray-600"><i data-lucide="check"
+                  class="h-4 w-4 text-brand-gold bg-brand-gold/10 p-0.5 rounded-none shrink-0"></i><span>Dynamic
+                  Bullet Train Experience</span></div>
+            </div>
+          </div>
+          <button onclick="selectPackage('China')"
+            class="w-full bg-brand-primary hover:bg-brand-gold text-white hover:text-brand-primary font-display font-bold text-xs py-3.5 px-4 rounded-none flex items-center justify-center space-x-1.5 shadow-lg transition-all">
+            <span>Enquire Selected Package</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Slider -->
+<section id="testimonials" class="py-24 bg-brand-primary text-white relative overflow-hidden">
+  <div class="absolute top-10 right-10 opacity-5">
+    <i data-lucide="quote" class="h-64 w-64 text-white"></i>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+      <span class="text-brand-gold font-medium text-xs tracking-widest uppercase block">Client Experiences</span>
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+        What Our <span class="italic-serif text-brand-gold">Travelers Say</span>
+      </h2>
+      <div class="h-1 w-20 bg-brand-gold mx-auto rounded-none"></div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative min-h-[300px] flex items-center justify-center">
+
+      <div
+        class="bg-brand-secondary/40 backdrop-blur-md rounded-none p-8 md:p-12 border border-white/10 text-center flex flex-col items-center relative max-w-2xl shadow-2xl w-full">
+        <!-- Quote icon -->
+        <div class="bg-brand-gold text-brand-primary p-3 rounded-none -mt-16 md:-mt-20 mb-6 shadow-lg">
+          <i data-lucide="quote" class="h-6 w-6 fill-brand-primary text-brand-primary"></i>
+        </div>
+
+        <!-- Star ratings -->
+        <div class="flex items-center space-x-1 mb-6">
+          <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-brand-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-brand-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-brand-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-brand-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 text-brand-gold fill-brand-gold"></i>
+        </div>
+
+        <!-- Custom Content Box (Animated by JS) -->
+        <div id="testimonial-content" class="transition-opacity duration-300 opacity-100">
+          <blockquote id="testimonial-quote"
+            class="text-lg sm:text-xl font-light leading-relaxed text-white/90 mb-8 italic">
+            "Our Thailand holiday was perfectly organized. Every detail was handled professionally."
+          </blockquote>
+
+          <div class="text-center">
+            <div id="testimonial-name" class="font-display font-bold text-sm text-white">Happy Traveler</div>
+            <div class="text-[10px] text-brand-gold font-bold uppercase tracking-widest mt-1">Verified Customer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Buttons -->
+      <div class="absolute top-1/2 -translate-y-1/2 left-0 md:-left-16 z-25">
+        <button onclick="changeTestimonial(-1)"
+          class="bg-white/10 hover:bg-brand-gold hover:text-brand-primary text-white p-3 rounded-none border border-white/20 transition-all">
+          <i data-lucide="chevron-left" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <div class="absolute top-1/2 -translate-y-1/2 right-0 md:-right-16 z-25">
+        <button onclick="changeTestimonial(1)"
+          class="bg-white/10 hover:bg-brand-gold hover:text-brand-primary text-white p-3 rounded-none border border-white/20 transition-all">
+          <i data-lucide="chevron-right" class="h-5 w-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Carousel Dots -->
+    <div class="flex items-center justify-center space-x-2 mt-12">
+      <button onclick="setTestimonial(0)"
+        class="testimonial-dot h-2.5 w-8 bg-brand-gold rounded-none transition-all"></button>
+      <button onclick="setTestimonial(1)"
+        class="testimonial-dot h-2.5 w-2.5 bg-white/30 rounded-none transition-all"></button>
+      <button onclick="setTestimonial(2)"
+        class="testimonial-dot h-2.5 w-2.5 bg-white/30 rounded-none transition-all"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section class="relative py-28 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1600"
+      alt="Luxury scenery" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/95 to-brand-secondary/85 mix-blend-multiply">
+    </div>
+  </div>
+
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center space-y-8">
+    <div
+      class="inline-flex items-center space-x-2 bg-brand-gold/20 border border-brand-gold/30 rounded-none px-4 py-1.5 text-brand-gold text-xs font-semibold tracking-wider uppercase">
+      <span>Exclusive Consultations</span>
+    </div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white leading-tight">
+      Ready for Your <span class="italic-serif text-brand-gold">Next Adventure?</span>
+    </h2>
+    <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto font-light leading-relaxed">
+      Whether you're planning your dream vacation, booking flights with competitive routing, or looking for a premium
+      domestic tour, our expert team is ready to design your customized journey.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+      <a href="#contact"
+        class="w-full sm:w-auto bg-brand-gold hover:bg-[#b8952d] text-brand-primary px-8 py-4 rounded-none font-display font-bold text-sm tracking-wide shadow-lg hover:shadow-brand-gold/30 transition-all flex items-center justify-center space-x-2">
+        <i data-lucide="calendar-clock" class="h-4.5 w-4.5"></i>
+        <span>Get a Free Consultation</span>
+      </a>
+      <a href="https://wa.me/94788343300?text=Hi%20AG%20Tours,%20I'm%20interested%20in%20inquiring%20about%20a%20holiday%20package."
+        target="_blank"
+        class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-none font-display font-bold text-sm tracking-wide shadow-lg transition-all flex items-center justify-center space-x-2">
+        <i data-lucide="message-square" class="h-4.5 w-4.5 fill-white"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Coordinates & Embed Maps -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <span class="text-brand-gold font-medium text-xs tracking-widest uppercase block">Plan Your Holiday</span>
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-primary">
+        Get in Touch with our <span class="italic-serif text-brand-gold">Travel Experts</span>
+      </h2>
+      <p class="text-gray-500 font-light text-sm sm:text-base">
+        Have questions or need a custom quotation? Reach out directly to our AG SKYBRIDGE head office.
+      </p>
+      <div class="h-1 w-20 bg-brand-gold mx-auto rounded-none"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+      <!-- Coordinates Info -->
+      <div class="lg:col-span-5 flex flex-col justify-between">
+        <div
+          class="bg-brand-light rounded-none p-8 border border-gray-100 space-y-6 shadow-sm h-full flex flex-col justify-center">
+          <div>
+            <h3 class="font-display font-extrabold text-2xl text-brand-primary">AG SKYBRIDGE Office</h3>
+            <p class="text-xs text-gray-500 font-light leading-relaxed mt-2">Walk in or call to schedule a personal
+              travel advisory meeting.</p>
+          </div>
+
+          <!-- Links lists -->
+          <div class="space-y-4 pt-2">
+            <a href="https://wa.me/94788343300" target="_blank"
+              class="flex items-start space-x-4 p-3 rounded-none hover:bg-white hover:shadow-sm transition-all group">
+              <div
+                class="bg-emerald-50 text-emerald-600 p-3 rounded-none group-hover:bg-emerald-600 group-hover:text-white transition-colors shrink-0">
+                <i data-lucide="message-square" class="h-5 w-5 fill-current"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">WhatsApp
+                  Hot-Line</span>
+                <span id="package-enquiry-number"
+                  class="text-sm font-semibold text-brand-primary group-hover:text-emerald-600 transition-colors">0788
+                  34 3300</span>
+              </div>
+            </a>
+
+            <!-- <a href="tel:0788343300"
+                class="flex items-start space-x-4 p-3 rounded-none hover:bg-white hover:shadow-sm transition-all group">
+                <div
+                  class="bg-brand-primary/5 text-brand-primary p-3 rounded-none group-hover:bg-brand-primary group-hover:text-white transition-colors shrink-0">
+                  <i data-lucide="phone" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">General Office
+                    Lines</span>
+
+                </div> 
+              </a> -->
+
+            <a href="tel:+94703800645"
+              class="flex items-start space-x-4 p-3 rounded-none hover:bg-white hover:shadow-sm transition-all group">
+              <div
+                class="bg-brand-primary/5 text-brand-primary p-3 rounded-none group-hover:bg-brand-primary group-hover:text-white transition-colors shrink-0">
+                <i data-lucide="phone" class="h-5 w-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Office Line</span>
+                <span
+                  class="text-sm font-semibold text-brand-primary group-hover:text-brand-secondary transition-colors">+94
+                  78 834 3300</span> </br>
+                <span
+                  class="text-sm font-semibold text-brand-primary group-hover:text-brand-secondary transition-colors">+94
+                  70 380 0645</span>
+              </div>
+            </a>
+
+            <a href="mailto:contact@academicgateways.lk"
+              class="flex items-start space-x-4 p-3 rounded-none hover:bg-white hover:shadow-sm transition-all group">
+              <div
+                class="bg-brand-primary/5 text-brand-primary p-3 rounded-none group-hover:bg-brand-primary group-hover:text-white transition-colors shrink-0">
+                <i data-lucide="mail" class="h-5 w-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Official Support
+                  Email</span>
+                <span
+                  class="text-sm font-semibold text-brand-primary group-hover:text-brand-secondary transition-colors">contact@academicgateways.lk</span>
+              </div>
+            </a>
+
+            <div class="flex items-start space-x-4 p-3">
+              <div class="bg-brand-primary/5 text-brand-primary p-3 rounded-none shrink-0">
+                <i data-lucide="map-pin" class="h-5 w-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Head Office
+                  Address</span>
+                <span class="text-sm font-semibold text-brand-primary leading-tight block">No. 131 E, Kirindiwela
+                  Road, Yakkala.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embedded Map -->
+      <div class="lg:col-span-7">
+        <div class="rounded-none overflow-hidden shadow-xl border border-gray-100 h-[480px] w-full relative">
+          <iframe title="AG SKYBRIDGE Office Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.1261527730807!2d80.03841597293257!3d7.081086001474796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fd002ad35a79%3A0x7552d2234fc54dd2!2sNexis%20College%20International!5e1!3m2!1sen!2slk!4v1784102344495!5m2!1sen!2slk"
+            class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500" allowfullscreen=""
+            loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Back to top button -->
+
+
+<!-- App Logic Scripts -->
+<script>
+  // Testimonials data list
+  const testimonials = [
+    {
+      name: "Akila Sandeepa",
+      review: "Our Thailand holiday was perfectly organized. Every detail was handled professionally."
+    },
+    {
+      name: "Saman Bollegala",
+      review: "Excellent flight booking service with great customer support."
+    },
+    {
+      name: "Yohan Perera",
+      review: "A trustworthy company. We have known Academic Gateways for years, so choosing A G Tours was an easy decision."
+    }
+  ];
+
+  let activeTestimonialIndex = 0;
+  let autoSlideInterval;
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      changeTestimonial(1, true);
+    }, 2000);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+  }
+
+  function updateTestimonialDOM() {
+    const contentEl = document.getElementById('testimonial-content');
+
+    // Fade out
+    contentEl.classList.remove('opacity-100');
+    contentEl.classList.add('opacity-0');
+
+    setTimeout(() => {
+      const item = testimonials[activeTestimonialIndex];
+      document.getElementById('testimonial-quote').innerText = `"${item.review}"`;
+      document.getElementById('testimonial-name').innerText = item.name;
+
+      const dots = document.querySelectorAll('.testimonial-dot');
+      dots.forEach((dot, idx) => {
+        if (idx === activeTestimonialIndex) {
+          dot.className = "testimonial-dot h-2.5 w-8 bg-brand-gold rounded-none transition-all";
+        } else {
+          dot.className = "testimonial-dot h-2.5 w-2.5 bg-white/30 rounded-none transition-all";
+        }
+      });
+
+      // Fade in
+      contentEl.classList.remove('opacity-0');
+      contentEl.classList.add('opacity-100');
+    }, 300);
+  }
+
+  function changeTestimonial(direction, isAuto = false) {
+    activeTestimonialIndex += direction;
+    if (activeTestimonialIndex < 0) {
+      activeTestimonialIndex = testimonials.length - 1;
+    } else if (activeTestimonialIndex >= testimonials.length) {
+      activeTestimonialIndex = 0;
+    }
+    updateTestimonialDOM();
+    if (!isAuto) resetAutoSlide();
+  }
+
+  function setTestimonial(index) {
+    activeTestimonialIndex = index;
+    updateTestimonialDOM();
+    resetAutoSlide();
+  }
+
+  // Prepopulate selected destination details on click and scroll to contact WhatsApp hot-trigger
+  function selectPackage(country) {
+    // Construct standard WhatsApp greeting text based on selected country
+    const message = encodeURIComponent(`Hi AG SKYBRIDGE, I'm interested in enquiring about the ${country} Holiday Package.`);
+    const url = `https://wa.me/94788343300?text=${message}`;
+    window.open(url, '_blank');
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Start Testimonial Auto Slide
+    startAutoSlide();
+
+    // Init Lucide Icons
+    lucide.createIcons();
+
+    // Current Year (Safeguarded)
+    const currentYearEl = document.getElementById('current-year');
+    if (currentYearEl) {
+      currentYearEl.innerText = new Date().getFullYear();
+    }
+
+    // Mobile Menu toggle (Safeguarded)
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu on clicking any navigation item
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Scroll progress, sticky navbar & back-to-top handler (Safeguarded)
+    const navbar = document.getElementById('navbar');
+    const logoBadge = document.getElementById('logo-badge');
+    const logoText = document.getElementById('logo-text');
+    const logoSubtext = document.getElementById('logo-subtext');
+    const menuBtn = document.getElementById('menu-toggle');
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+    const scrollProgress = document.getElementById('scroll-progress');
+
+    window.addEventListener('scroll', () => {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0 && scrollProgress) {
+        const percentage = (window.scrollY / totalScroll) * 100;
+        scrollProgress.style.width = `${percentage}%`;
+      }
+
+      if (navbar) {
+        if (window.scrollY > 50) {
+          navbar.className = "fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white shadow-md py-4 border-b border-gray-100";
+          if (logoBadge) logoBadge.className = "w-10 h-10 flex items-center justify-center rounded-none bg-brand-primary transition-all duration-300";
+          if (logoText) logoText.className = "font-display font-extrabold text-lg tracking-tight leading-none text-brand-primary transition-colors";
+          if (logoSubtext) logoSubtext.className = "text-[9px] uppercase tracking-widest font-semibold text-gray-500 mt-0.5 transition-colors";
+          if (menuBtn) menuBtn.className = "text-brand-primary hover:text-brand-gold focus:outline-none p-2";
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('text-white/95');
+            link.classList.add('text-brand-primary/90');
+          });
+        } else {
+          navbar.className = "fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-gradient-to-b from-black/70 to-transparent py-5";
+          if (logoBadge) logoBadge.className = "w-10 h-10 flex items-center justify-center rounded-none bg-white/10 backdrop-blur-sm transition-all duration-300";
+          if (logoText) logoText.className = "font-display font-extrabold text-lg tracking-tight leading-none text-white transition-colors";
+          if (logoSubtext) logoSubtext.className = "text-[9px] uppercase tracking-widest font-semibold text-white/60 mt-0.5 transition-colors";
+          if (menuBtn) menuBtn.className = "text-white hover:text-brand-gold focus:outline-none p-2";
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('text-brand-primary/90');
+            link.classList.add('text-white/95');
+          });
+        }
+      }
+
+      if (backToTopBtn) {
+        if (window.scrollY > 400) {
+          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100');
+        }
+      }
+    });
+
+    // Scroll back to top
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
+</script>
